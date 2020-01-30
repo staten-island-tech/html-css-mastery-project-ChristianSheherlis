@@ -1,0 +1,10 @@
+.bg-img{
+    background-image: linear-gradient(rgba(22, 158, 234, 0.5)),
+    url(../media/Mobile-Cyprus.png);
+    background-size: cover;
+    height: 90vh;
+}
+
+@include laptop{
+    background-image: url(../media/Bay.png);
+}

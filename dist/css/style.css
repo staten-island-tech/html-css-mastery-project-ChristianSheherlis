@@ -1,1 +1,11 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.bg-img {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 158, 234, 0.5))), url(../media/Mobile-Cyprus.png);
+  background-image: linear-gradient(rgba(22, 158, 234, 0.5)), url(../media/Mobile-Cyprus.png);
+  background-size: cover;
+  height: 90vh;
+}
+
+@media (min-width: 900px) {
+  background-image: url(../media/Bay.png);
+}
+/*# sourceMappingURL=style.css.map */

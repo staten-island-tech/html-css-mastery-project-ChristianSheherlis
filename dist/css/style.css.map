@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AEAA,AAAA,OAAO,CAAA;EACH,gBAAgB,EAAE,wCAAwC,EAC1D,+BAA+B;EAC/B,eAAe,EAAE,KAAK;EACtB,MAAM,EAAE,IAAI;CACf;;ADUC,MAAM,EAAC,SAAS,EAAE,KAAK;ECPrB,gBAAgB,EAAE,qBAAqB",
     "sources": [
-        "../../scss/style.scss"
+        "../../scss/style.scss",
+        "../../scss/_variables.scss",
+        "../../scss/_splash.scss"
     ],
     "names": [],
     "file": "style.css"

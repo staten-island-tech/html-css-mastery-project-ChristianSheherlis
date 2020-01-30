@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AEAA,AAAA,OAAO,AAAA,CACH,gBAAgB,CAAE,qCAAwC,CAC1D,+BAA+B,CAC/B,eAAe,CAAE,KAAK,CACtB,MAAM,CAAE,IAAI,CACf,ADUC,MAAM,EAAC,SAAS,EAAE,KAAK,ECPrB,gBAAgB,CAAE,qBAAqB",
     "sources": [
-        "../../scss/style.scss"
+        "../../scss/style.scss",
+        "../../scss/_variables.scss",
+        "../../scss/_splash.scss"
     ],
     "names": [],
     "file": "style.min.css"

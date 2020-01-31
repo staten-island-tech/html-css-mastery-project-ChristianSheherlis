@@ -16,6 +16,7 @@
     line-height: 60px;
     color: white;
     align-items: center;
+    text-align: center;
 
     @include laptop{
         font-size: 4.5rem;
@@ -24,5 +25,10 @@
 
 .splash-button{
     text-align: center;
+    background-color: white;
+    width: 20rem;
+    height: 5rem;
+    justify-content: center;
     border-radius: 50px;
+    font-family: Lato;
 }

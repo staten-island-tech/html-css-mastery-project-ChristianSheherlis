@@ -32,6 +32,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 @media (min-width: 900px) {
@@ -42,6 +43,13 @@ html {
 
 .splash-button {
   text-align: center;
+  background-color: white;
+  width: 20rem;
+  height: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50px;
+  font-family: Lato;
 }
 /*# sourceMappingURL=style.css.map */

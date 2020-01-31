@@ -13,7 +13,7 @@ html {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 158, 234, 0.5))), url(../media/Bay.png);
   background-image: linear-gradient(rgba(22, 158, 234, 0.5)), url(../media/Bay.png);
   background-size: cover;
-  height: 90vh;
+  height: 99vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -50,6 +50,16 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50px;
-  font-family: Lato;
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.splash-button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=style.css.map */

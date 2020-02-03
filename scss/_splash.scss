@@ -17,9 +17,25 @@
     color: white;
     align-items: center;
     text-align: center;
+    animation-name: cyprus;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    position: absolute;
 
     @include laptop{
         font-size: 4.5rem;
+        animation-duration: 2.5s;
+    }
+
+    @include tablet{
+        font-size: 3.75rem;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes cyprus {
+    0%{
+        transform: translate(-150%, 0%);
     }
 }
 

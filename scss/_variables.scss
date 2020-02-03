@@ -5,6 +5,10 @@ html{
   box-sizing: border-box;
 }
 
+$colors: (
+  primary: #169eea
+);
+
 $desktop: 1100px;
 $laptop: 900px;
 $tablet: 600px;

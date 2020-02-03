@@ -27,7 +27,6 @@ html {
   font-style: normal;
   font-weight: normal;
   font-size: 3rem;
-  line-height: 60px;
   color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -39,7 +38,6 @@ html {
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  position: absolute;
 }
 
 @media (min-width: 900px) {

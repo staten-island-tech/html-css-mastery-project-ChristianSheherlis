@@ -13,14 +13,12 @@
     font-style: normal;
     font-weight: normal;
     font-size: 3rem;
-    line-height: 60px;
     color: white;
     align-items: center;
     text-align: center;
     animation-name: cyprus;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    position: absolute;
 
     @include laptop{
         font-size: 4.5rem;

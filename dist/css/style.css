@@ -91,4 +91,9 @@ html {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
+
+.history {
+  height: 99vh;
+  background-color: #169eea;
+}
 /*# sourceMappingURL=style.css.map */

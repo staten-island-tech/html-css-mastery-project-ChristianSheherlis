@@ -1,4 +1,8 @@
-.bg-img{
+body{
+    margin: 0;
+}
+
+.splash{
     display: flex;
     background-image: linear-gradient(rgba(22, 158, 234, 0.5)),
     url(../media/Bay.png);
@@ -9,11 +13,7 @@
 }
 
 .splash-info{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
     font-size: 3rem;
-    color: white;
     align-items: center;
     text-align: center;
     animation-name: cyprus;

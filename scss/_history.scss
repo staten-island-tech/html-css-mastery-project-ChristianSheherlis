@@ -6,4 +6,9 @@
 .info{
     font-size: 2rem;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    @include desktop{
+        width: 10rem;
+    }
 }

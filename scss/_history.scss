@@ -3,12 +3,37 @@
     background-color: color(primary);
 }
 
-.info{
+.history-info{
+    display: flex;
     font-size: 2rem;
     text-align: center;
-    display: flex;
     justify-content: center;
     @include desktop{
-        width: 10rem;
+        font-size: 4rem;
     }
+}
+
+.history-gallery{
+    position: absolute;
+}
+
+.history-gallery-castle{
+    position: absolute;
+    height: 40rem;
+    left: 2rem;
+}
+
+.history-gallery-beach{
+    position: absolute;
+    height: 40rem;
+    left: 4rem;
+    bottom: -70rem;
+}
+
+.history-gallery-hotel{
+    position: absolute;
+    width: 55rem;
+    height: 40rem;
+    bottom: -60rem;
+    left: 25rem;
 }

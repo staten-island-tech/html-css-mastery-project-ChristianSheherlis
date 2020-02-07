@@ -17,23 +17,42 @@
     position: absolute;
 }
 
-.history-gallery-castle{
+.h-gallery-photo{
+    height: 20rem;
     position: absolute;
-    height: 40rem;
-    left: 2rem;
+    transition: all 0.3s;
+    outline-offset: .5rem;
 }
 
-.history-gallery-beach{
+.castle{
     position: absolute;
-    height: 40rem;
-    left: 4rem;
-    bottom: -70rem;
+    height: 10rem;
+    left: 8rem;
+    top: 7rem
 }
 
-.history-gallery-hotel{
+.beach{
     position: absolute;
-    width: 55rem;
-    height: 40rem;
-    bottom: -60rem;
-    left: 25rem;
+    height: 10rem;
+    left: 10rem;
+    top: 17rem;
+}
+
+.hotel{
+    position: absolute;
+    width: 15rem;
+    height: 10rem;
+    top: 12rem;
+    left: 16rem;
+}
+
+.h-gallery-photo:hover{
+    transform: scale(1.4);
+    outline: .25rem solid white;
+    z-index: 2;
+}
+
+.history-gallery:hover .h-gallery-photo:not(:hover){
+    transform: scale(0.5);
+    opacity: 0.3;
 }

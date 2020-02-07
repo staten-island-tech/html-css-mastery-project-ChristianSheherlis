@@ -141,23 +141,23 @@ body {
 .castle {
   position: absolute;
   height: 12rem;
-  left: 6rem;
-  top: 6rem;
+  left: 4rem;
+  top: 5rem;
 }
 
 .beach {
   position: absolute;
   height: 12rem;
-  left: 8rem;
-  top: 17rem;
+  left: 6rem;
+  top: 16rem;
 }
 
 .hotel {
   position: absolute;
   width: 17rem;
   height: 12rem;
-  top: 11rem;
-  left: 15rem;
+  top: 10rem;
+  left: 16rem;
 }
 
 .h-gallery-photo:hover {

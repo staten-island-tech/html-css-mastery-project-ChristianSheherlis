@@ -21,14 +21,22 @@
     height: 20rem;
     position: absolute;
     transition: all 0.3s;
-    outline-offset: .5rem;
+    outline-offset: .25rem;
 }
 
 .castle{
     position: absolute;
     height: 12rem;
     left: 4rem;
-    top: 5rem
+    top: 5rem;
+
+    @include desktop{
+        height: 40rem;
+    }
+    @include tablet{
+        height: 25rem;
+        top: 15rem
+    }
 }
 
 .beach{
@@ -36,6 +44,15 @@
     height: 12rem;
     left: 6rem;
     top: 16rem;
+
+    @include desktop{
+        height: 40rem;
+        top: 30rem;
+    }
+    @include tablet{
+        height: 25rem;
+        top:27rem
+    }
 }
 
 .hotel{
@@ -44,12 +61,33 @@
     height: 12rem;
     top: 10rem;
     left: 16rem;
+
+    @include desktop{
+        height: 40rem;
+        width: 60rem;
+        top: 19rem;
+        left: 35rem;
+    }
+    @include tablet{
+        height: 25rem;
+        width: 30rem;
+        top: 15rem;
+    }
 }
 
 .h-gallery-photo:hover{
     transform: scale(1.4);
     outline: .25rem solid white;
     z-index: 2;
+
+    @include desktop{
+        transform: scale(1.1);
+        outline: 1rem solid white;
+    }
+    @include tablet{
+        transform: scale(1.2);
+        outline: .5rem solid white
+    }
 }
 
 .history-gallery:hover .h-gallery-photo:not(:hover){

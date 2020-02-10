@@ -51,7 +51,8 @@
     }
     @include tablet{
         height: 25rem;
-        top:27rem
+        top:27rem;
+        left: 18rem;
     }
 }
 
@@ -72,6 +73,7 @@
         height: 25rem;
         width: 30rem;
         top: 15rem;
+        left: 32rem;
     }
 }
 
@@ -93,4 +95,22 @@
 .history-gallery:hover .h-gallery-photo:not(:hover){
     transform: scale(0.5);
     opacity: 0.3;
+}
+
+.h-gallery-info{
+    position: absolute;
+}
+
+.h-gallery-info-text{
+    position: absolute;
+    height: 35rem;
+    top: 30rem;
+    background-color: color(tertiary);
+    text-align: center;
+    left: 1.3rem;
+    width: 35rem;
+    @include desktop{
+        height: 50rem;
+        right: 2rem;
+    }
 }

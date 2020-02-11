@@ -30,12 +30,15 @@
     left: 4rem;
     top: 5rem;
 
-    @include desktop{
-        height: 40rem;
-    }
     @include tablet{
         height: 25rem;
-        top: 15rem
+        top: 10rem;
+        left: 10rem;
+    }
+    @include desktop{
+        height: 40rem;
+        left: 5rem;
+        top: 15rem;
     }
 }
 
@@ -45,14 +48,15 @@
     left: 6rem;
     top: 16rem;
 
-    @include desktop{
-        height: 40rem;
-        top: 30rem;
-    }
     @include tablet{
         height: 25rem;
-        top:27rem;
-        left: 18rem;
+        top:22rem;
+        left: 22rem;
+    }
+    @include desktop{
+        height: 40rem;
+        top: 42rem;
+        left: 14rem;
     }
 }
 
@@ -63,17 +67,17 @@
     top: 10rem;
     left: 16rem;
 
-    @include desktop{
-        height: 40rem;
-        width: 60rem;
-        top: 19rem;
-        left: 35rem;
-    }
     @include tablet{
         height: 25rem;
         width: 30rem;
-        top: 15rem;
-        left: 32rem;
+        top: 10rem;
+        left: 38rem;
+    }
+    @include desktop{
+        height: 40rem;
+        width: 60rem;
+        top: 24rem;
+        left: 28rem;
     }
 }
 
@@ -82,13 +86,13 @@
     outline: .25rem solid white;
     z-index: 2;
 
-    @include desktop{
-        transform: scale(1.1);
-        outline: 1rem solid white;
-    }
     @include tablet{
         transform: scale(1.2);
         outline: .5rem solid white
+    }
+    @include desktop{
+        transform: scale(1.1);
+        outline: 1rem solid white;
     }
 }
 
@@ -97,20 +101,63 @@
     opacity: 0.3;
 }
 
-.h-gallery-info{
+.history-box{
     position: absolute;
 }
 
-.h-gallery-info-text{
+.history-box-text{
     position: absolute;
+    display: flex;
+    left: 1.3rem;
+    width: 35rem;
     height: 35rem;
     top: 30rem;
     background-color: color(tertiary);
-    text-align: center;
-    left: 1.3rem;
-    width: 35rem;
-    @include desktop{
+    flex-direction: column;
+    @include tablet{
+        top: 55rem;
+        width: 74rem;
+    }
+    @include laptop{
+        top: 5rem;
+        width: 70rem;
         height: 50rem;
-        right: 2rem;
+        left: 72rem;
+    }
+    @include desktop{
+        height: 40vw;
+        left: 48vw;
+        width: 50vw;
+        top: 4rem;
+    }
+}
+
+.h-box-text-header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    @include tablet{
+        font-size: 6rem;
+    }
+    @include desktop{
+        font-size: 8rem;
+    }
+}
+
+.h-box-text-list{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 200%;
+    @include tablet{
+        font-size: 1.8rem;
+        line-height: 162.5%;
+    }
+    @include laptop{
+        font-size: 2.25rem;
+        line-height: 200%;
+    }
+    @include desktop{
+        font-size: 3.5rem;
     }
 }

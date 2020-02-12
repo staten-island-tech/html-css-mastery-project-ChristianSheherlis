@@ -371,7 +371,7 @@ body {
   border-radius: 10rem;
 }
 
-.cliff-card {
+.card {
   -webkit-perspective: 150rem;
           perspective: 150rem;
   -moz-perspective: 150rem;
@@ -381,7 +381,7 @@ body {
   margin-right: auto;
 }
 
-.cliff-side {
+.side {
   height: 20rem;
   width: 300px;
   border-radius: 10rem;
@@ -393,7 +393,7 @@ body {
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
-.cliff-front {
+.front {
   position: absolute;
   top: 0;
   left: 0;
@@ -402,7 +402,7 @@ body {
   transition: all 1s;
 }
 
-.cliff-back {
+.back {
   background-color: white;
   position: absolute;
   top: 0;
@@ -414,12 +414,12 @@ body {
   transition: all 1s;
 }
 
-.cliff-card:hover .cliff-front {
+.card:hover .front {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
 }
 
-.cliff-card:hover .cliff-back {
+.card:hover .back {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
 }

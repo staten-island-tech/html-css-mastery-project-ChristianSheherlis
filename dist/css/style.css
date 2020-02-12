@@ -348,12 +348,79 @@ body {
 
 .scenery-info {
   text-align: center;
-  font-size: 6rem;
+  font-size: 3.5rem;
 }
 
 .scenery-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 83.5vh;
+  text-align: center;
+}
+
+.s-gallery-photo {
+  height: 20rem;
+  border-radius: 10rem;
+}
+
+.cliff-card {
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cliff-side {
+  height: 20rem;
+  width: 300px;
+  border-radius: 10rem;
+  font-size: 15px;
+  color: white;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.cliff-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cliff-back {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cliff-card:hover .cliff-front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.cliff-card:hover .cliff-back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
 }
 /*# sourceMappingURL=style.css.map */

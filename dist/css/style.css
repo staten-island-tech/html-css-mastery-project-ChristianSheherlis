@@ -343,7 +343,7 @@ body {
 
 .scenery {
   height: 99vh;
-  background: #028EBA;
+  background: #0285ba;
 }
 
 .scenery-info {
@@ -378,7 +378,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 75vh;
+    height: 60vh;
   }
 }
 
@@ -420,7 +420,7 @@ body {
 @media (min-width: 1100px) {
   .card {
     margin-left: 1.25%;
-    margin-top: 10%;
+    margin-top: 7.5%;
   }
 }
 
@@ -502,5 +502,9 @@ body {
   .back-text {
     font-size: 6rem;
   }
+}
+
+.card-right {
+  margin-right: 33%;
 }
 /*# sourceMappingURL=style.css.map */

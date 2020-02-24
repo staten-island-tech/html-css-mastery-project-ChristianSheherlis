@@ -1,6 +1,6 @@
 .scenery{
     height: 99vh;
-    background: color(primary);
+    background: color(quaternary);
 }
 
 .scenery-info{
@@ -19,7 +19,7 @@
     justify-content: space-between;
     @include desktop{
         flex-direction: row;
-        height: 75vh;
+        height: 60vh;
     }
 }
 
@@ -48,7 +48,7 @@
     }
     @include desktop{
         margin-left: 1.25%;
-        margin-top: 10%;
+        margin-top: 7.5%;
     }
 }
 
@@ -107,4 +107,8 @@
     @include desktop{
         font-size: 6rem;
     }
+}
+
+.card-right{
+    margin-right: 33%
 }

@@ -7,7 +7,7 @@
     text-align: center;
     font-size: 3.5rem;
     @include desktop{
-        font-size: 7rem;
+        font-size: 8rem;
     }
 }
 
@@ -42,6 +42,10 @@
     position: relative;
     margin-left: 10%;
     margin-right: auto;
+    @include tablet{
+        margin-left: 25%;
+        margin-top: 5%;
+    }
     @include desktop{
         margin-left: 1.25%;
         margin-top: 10%;
@@ -56,6 +60,11 @@
     color: white;
     backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0 ,.15);
+    @include tablet{
+        height: 25rem;
+        border-radius: 12.5rem;
+        width: 37.5rem;
+    }
     @include desktop{
         height: 40rem;
         border-radius: 20rem;

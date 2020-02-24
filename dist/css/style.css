@@ -343,7 +343,8 @@ body {
 
 .scenery {
   height: 99vh;
-  background: #0285ba;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#028EBA), to(#026cba));
+  background-image: linear-gradient(#028EBA, #026cba);
 }
 
 .scenery-info {

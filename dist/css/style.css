@@ -508,4 +508,14 @@ body {
 .card-right {
   margin-right: 33%;
 }
+
+.cities {
+  background: #026cba;
+  height: 99vh;
+}
+
+.cities-info-text {
+  text-align: center;
+  font-size: 10rem;
+}
 /*# sourceMappingURL=style.css.map */

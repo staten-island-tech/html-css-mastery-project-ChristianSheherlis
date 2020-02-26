@@ -26,6 +26,18 @@ ul {
   font-weight: normal;
 }
 
+a:-webkit-any-link {
+  color: black;
+}
+
+a:-moz-any-link {
+  color: black;
+}
+
+a:any-link {
+  color: black;
+}
+
 body {
   margin: 0;
 }

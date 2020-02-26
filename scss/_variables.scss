@@ -25,6 +25,10 @@ ul{
   font-weight: normal;
 }
 
+a:any-link{
+  color: black;
+}
+
 $colors: (
   primary: #028EBA,
   secondary: #169eea,

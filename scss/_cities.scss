@@ -7,3 +7,32 @@
     text-align: center;
     font-size: 10rem;
 }
+
+.cities-gallery-cards{
+    display: flex;
+    justify-content: space-evenly;
+    height: 70rem;
+    align-items: center;
+}
+
+.cities-text{
+    color: black;
+    font-size: 4rem;
+}
+
+.c-card{
+    text-align: center;
+    background-color: white;
+    height: 50rem;
+    width: 30rem;
+    border-radius: 5rem;
+}
+
+.c-info{
+    font-size: 2.5rem;
+}
+
+.c-g-cards-nicosia-img{
+    height: 30rem;
+    width: 28rem;
+}

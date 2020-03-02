@@ -25,6 +25,13 @@ ul{
   font-weight: normal;
 }
 
+p{
+  color: white;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+}
+
 a:any-link{
   color: black;
 }
@@ -60,8 +67,4 @@ $tablet: 600px;
   @media(min-width: #{$tablet}) {
     @content;
   }
-}
-
-@mixin Lato {
-  
 }

@@ -19,12 +19,14 @@
     justify-content: center;
     @include desktop{
         flex-direction: row;
+        justify-content: space-evenly;
     }
 }
 
 .cities-text{
     color: black;
     font-size: 4rem;
+    transition: .5s;
 }
 
 .c-card{
@@ -35,13 +37,38 @@
     border-radius: 5rem;
     margin-bottom: 2.5vh;
     transition: .5s;
+    @include desktop{
+        margin: 0;
+    }
 }
 
 .c-info{
+    color: black;
     font-size: 2.5rem;
 }
 
 .cities-img{
     height: 20rem;
     width: 28rem;
+    transition: .25s;
+}
+
+.c-card:hover{
+    transform: scaleX(6) scaleY(1.5);
+}
+
+.c-gallery-cards-limassol:hover{
+    transform: translateY(20rem) scaleX(6) scaleY(1.75);
+}
+
+.c-card:hover .cities-img:not(:active){
+    transform: scaleX(.375) scaleY(1.375) translateY(5rem) translateX(-25rem);
+}
+
+.c-card:hover .cities-text:not(:active){
+    transform: scaleX(.75) scaleY(1.75) translateY(.5rem)
+}
+
+.c-card:hover .c-info:not(:active){
+    transform: scaleX(.75) scaleY(2) translateY(.5rem);
 }

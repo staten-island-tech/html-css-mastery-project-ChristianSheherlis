@@ -63,7 +63,7 @@
     position: absolute;
     left: 7.5%;
     font-size: 2rem;
-    line-height: 5rem;
+    line-height: 8rem;
     list-style: none;
     opacity: 0;
     transition: .5s;
@@ -147,7 +147,12 @@
 
 .c-card:active .c-stats:not(:visited){
     opacity: 100%;
+    transform: scaleY(.75) translateY(-8rem);
+    @include tablet{
+        opacity: 100%;
+        transform: scaleY(1);
+    }
     @include desktop{
-        transform: scaleX(.75) scaleY(1.5) translateX(5rem) translateY(5rem);
+        transform: scaleX(.75) scaleY(1.75) translateX(5rem) translateY(5rem);
     }
 }

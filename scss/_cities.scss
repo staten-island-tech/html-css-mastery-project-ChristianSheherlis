@@ -9,6 +9,9 @@
 .cities-info-text{
     text-align: center;
     font-size: 5rem;
+    @include desktop{
+        font-size: 10rem;
+    }
 }
 
 .cities-gallery-cards{
@@ -20,6 +23,7 @@
     @include desktop{
         flex-direction: row;
         justify-content: space-evenly;
+        height: 85vh;
     }
 }
 
@@ -45,6 +49,7 @@
 .c-info{
     color: black;
     font-size: 2.5rem;
+    transition: .5s;
 }
 
 .cities-img{
@@ -53,22 +58,96 @@
     transition: .25s;
 }
 
-.c-card:hover{
-    transform: scaleX(6) scaleY(1.5);
+.c-stats{
+    color: black;
+    position: absolute;
+    left: 7.5%;
+    font-size: 2rem;
+    line-height: 5rem;
+    list-style: none;
+    opacity: 0;
+    transition: .5s;
+    @include tablet{
+        left: 0;
+        font-size: 2.5rem;
+        line-height: 7rem;
+    }
+    @include desktop{
+        left: 7.5%;
+        font-size: 2rem;
+        line-height: 5rem;
+    }
 }
 
-.c-gallery-cards-limassol:hover{
-    transform: translateY(20rem) scaleX(6) scaleY(1.75);
+.c-card:active{
+    transform: scaleY(175%) translateY(10rem);
+    @include tablet{
+        transform: scaleY(175%);
+    }
+    @include desktop{
+        transform: scaleX(6) scaleY(1.75);
+    }
 }
 
-.c-card:hover .cities-img:not(:active){
+.cities-gallery-cards:active .c-card:not(:hover){
+    opacity: 0;
+}
+
+.c-gallery-cards-nicosia:active{
+    transform: scaleY(175%) translateY(10rem);
+    @include tablet{
+        transform: scaleX(150%) scaleY(175%) translateY(12.5rem);
+    }
+    @include desktop{
+        transform: scaleX(6) scaleY(1.75) translateX(31%);
+    }
+}
+
+.c-gallery-cards-limassol:active{
+    transform: scaleY(175%) translateY(-3rem);
+    @include tablet{
+        transform: scaleX(150%) scaleY(175%) translateY(-3rem);
+    }
+    @include desktop{
+        transform: scaleX(6) scaleY(1.75);
+    }
+}
+
+.c-gallery-cards-laranca:active{
+    transform: scaleY(175%) translateY(-10rem);
+    @include tablet{
+        transform: scaleX(150%) scaleY(175%) translateY(-10rem)
+    }
+    @include desktop{
+        transform: scaleX(6) scaleY(1.75) translateX(-31%);
+    }
+}
+
+.c-card:active .cities-img:not(:visited){
+    opacity: 0;
+    @include desktop{
     transform: scaleX(.375) scaleY(1.375) translateY(5rem) translateX(-25rem);
+    opacity: 100%;
+    }
 }
 
-.c-card:hover .cities-text:not(:active){
+.c-card:active .cities-text:not(:visited){
+    transform: scaleY(.75);
+    @include desktop{
     transform: scaleX(.75) scaleY(1.75) translateY(.5rem)
+    }
 }
 
-.c-card:hover .c-info:not(:active){
+.c-card:active .c-info:not(:visited){
+    transform: scaleY(.9);
+    @include desktop{
     transform: scaleX(.75) scaleY(2) translateY(.5rem);
+    }
+}
+
+.c-card:active .c-stats:not(:visited){
+    opacity: 100%;
+    @include desktop{
+        transform: scaleX(.75) scaleY(1.5) translateX(5rem) translateY(5rem);
+    }
 }

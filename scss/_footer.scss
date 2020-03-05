@@ -5,5 +5,19 @@
 
 .footer-header{
     text-align: center;
+    font-size: 2rem;
+    @include desktop{
     font-size: 6rem;
+    }
+}
+
+.footer-ad{
+    text-align: center;
+    height: 50vh;
+}
+
+.footer-ad-txt{
+    display: flex;
+
+
 }

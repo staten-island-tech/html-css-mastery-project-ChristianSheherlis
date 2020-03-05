@@ -793,6 +793,23 @@ body {
 
 .footer-header {
   text-align: center;
-  font-size: 6rem;
+  font-size: 2rem;
+}
+
+@media (min-width: 1100px) {
+  .footer-header {
+    font-size: 6rem;
+  }
+}
+
+.footer-ad {
+  text-align: center;
+  height: 50vh;
+}
+
+.footer-ad-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

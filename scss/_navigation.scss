@@ -33,7 +33,7 @@
 
 .navigation-icon::after{
     position: absolute;
-    top: -.8rem;
+    top: .8rem;
     left: 0;
 }
 
@@ -42,7 +42,7 @@
     height: 2px;
     background-color: #333;
     display: inline-block;
-    transition: all .2%;
+    transition: all .2s;
 }
 
 .navigation-button:hover .navigation-icon::before{
@@ -88,8 +88,10 @@
     top: 0;
     left: 0;
     z-index: 1500;
-    width: 100%;
+    width: 0;
     transition: all .8s cubic-bezier(.175, .885, .32, 1.275);
+    opacity: 0;
+    visibility: hidden;
 }
 
 .navigation-background{
@@ -104,7 +106,7 @@
         rgba(40, 180, 133, 1)) ;
     z-index: 1000;
     transition: .8s;
-    transform: scale(80);
+    opacity: 0;
 }
 
 .navigation-link, .navigation-link:link, .navigation-link:visited{
@@ -128,9 +130,17 @@
 
 .navigation-checkbox:checked~.navigation-background{
     transform: scale(80);
+    opacity: 1;
 }
 
 .navigation-checkbox:checked~.navigation-nav{
     opacity: 1;
     width: 100%;
+    visibility: visible;
+}
+
+.navigation .navigation-checkbox:checked~.navigation-nav{
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
 }

@@ -959,7 +959,7 @@ body {
 
 .navigation-icon::after {
   position: absolute;
-  top: -.8rem;
+  top: .8rem;
   left: 0;
 }
 
@@ -968,8 +968,8 @@ body {
   height: 2px;
   background-color: #333;
   display: inline-block;
-  -webkit-transition: all .2%;
-  transition: all .2%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .navigation-button:hover .navigation-icon::before {
@@ -1018,9 +1018,11 @@ body {
   top: 0;
   left: 0;
   z-index: 1500;
-  width: 100%;
+  width: 0;
   -webkit-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+  visibility: hidden;
 }
 
 .navigation-background {
@@ -1034,8 +1036,7 @@ body {
   z-index: 1000;
   -webkit-transition: .8s;
   transition: .8s;
-  -webkit-transform: scale(80);
-          transform: scale(80);
+  opacity: 0;
 }
 
 .navigation-link, .navigation-link:link, .navigation-link:visited {
@@ -1062,10 +1063,18 @@ body {
 .navigation-checkbox:checked ~ .navigation-background {
   -webkit-transform: scale(80);
           transform: scale(80);
+  opacity: 1;
 }
 
 .navigation-checkbox:checked ~ .navigation-nav {
   opacity: 1;
   width: 100%;
+  visibility: visible;
+}
+
+.navigation .navigation-checkbox:checked ~ .navigation-nav {
+  opacity: 1;
+  width: 100%;
+  visibility: visible;
 }
 /*# sourceMappingURL=style.css.map */
